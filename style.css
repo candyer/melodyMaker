@@ -1,0 +1,93 @@
+
+
+body {
+	margin: 0;
+	background: linear-gradient(180deg, #68ffde 0%, #41c1f4 30%, #416af4 100%);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+button {
+	display: block;
+	height: 30px;
+	width: 30px;
+	background: rgba(211,211,211, 0.3);
+	border: 1px solid rgba(211, 211, 211, 0.3);
+	border-radius: 5px;
+	outline: none;
+}
+
+.refresh {
+	background: none;
+	border: none;
+}
+
+img {
+	height: 35px;
+	margin: -5px 0 0 -10px;
+}
+
+select {
+	margin-left: 20px;
+	height: 35px;
+	background: linear-gradient(180deg, #68ffde 0%, #41c1f4 50%, #416af4 100%);
+	color: #416af4;
+	font-size: 15px;
+	outline: none;
+}
+
+.control {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.board {
+	display: flex;
+}
+.row {
+	margin: 3px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.col {
+	margin: 3px;
+}
+
+.activate {
+	background: rgba(211,211,211, 0.8);
+	transition: background .1s;
+}
+
+.trail1 {
+	background: rgba(211,211,211, 0.7);
+	transition: background .1s;
+}
+
+.trail2 {
+	background: rgba(211,211,211, 0.6);
+	transition: background .1s;
+}
+.trail3 {
+	background: rgba(211,211,211, 0.5);
+	transition: background .1s;
+}
+
+.trail4 {
+	background: rgba(211,211,211, 0.4);
+	transition: background .1s;
+}
+.trail5 {
+	background: rgba(211,211,211, 0.3);
+	transition: background .1s;
+}
+
+.checked {
+	background: rgba(211,211,211, 1);
+	transition: background  0.5s;
+}
+
