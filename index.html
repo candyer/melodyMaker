@@ -1,0 +1,37 @@
+
+
+<!Doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>melody maker</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div class='control'>
+			<button class='refresh' onclick='uncheckAll()'>
+				<img src='refresh.png'>
+			</button>
+
+			<select class="pause">
+				<option value="100">100</option>
+				<option value="200" selected>200</option>
+				<option value="300">300</option>
+				<option value="400">400</option>
+			</select>
+
+			<select class="wave_type">
+				<option value="sine">sine</option>
+				<option value="square" selected>square</option>
+				<option value="sawtooth">sawtooth</option>
+				<option value="triangle">triangle</option>
+			</select>
+		</div>
+
+		<div class='board'></div>
+		<script src='main.js'></script>
+	</body>
+	
+</html>
