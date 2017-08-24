@@ -4,7 +4,7 @@ let frequency = [1175, 1109, 1047, 987.8, 932.3, 880.0, 830.6, 784.0, 740.0, 698
 let pause = document.querySelector('.pause');
 let wave_type = document.querySelector('.wave_type');
 
-let checking = [];
+let checking = new Set();
 let count = 16;
 let os = [];
 let gs = [];
@@ -108,12 +108,10 @@ function handleCheck(e) {
 
 	if (button.className.includes('checked')){
 		button.classList.remove('checked');
-		let index = checking.indexOf(c);
-		checking.splice(index, 1);
+		checking.delete(c);
 	} else {
-		let idx = parseInt(c) % count; 
 		button.classList.add('checked');
-		checking.push(idx);
+		checking.add(parseInt(c) % size);
 	}
 }
 
